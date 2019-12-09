@@ -1,2 +1,2 @@
 # Algorithms
-A Compilation of Algorithms Written in C#
+A Compilation of algorithms written in python and C#
