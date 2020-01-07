@@ -18,3 +18,6 @@ Assume we are dealing with an environment which could only store integers within
 For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.
 
 """
+
+class Solution:
+    def reverse(self, x: int) -> int:
