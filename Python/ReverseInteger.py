@@ -21,19 +21,24 @@ For the purpose of this problem, assume that your function returns 0 when the re
 
 class Solution:
     def reverse(self, x: int) -> int:
+        
         num_in = x
         num_out = 0
+
+        isNegative = True if num_in < 0 else False
+        
+        if isNegative == True:
+            num_in *= -1
 
         while num_in != 0:
             pop = num_in%10
             num_in = int(num_in / 10)
             num_out = int((num_out*10) + pop)
-            
-            print(f"number popped = {pop}")
-            print(f"next number to check = {num_in}")
-            print(f"current output = {num_out}")
-        
-        return 0
+
+        if isNegative == True:
+            num_out *= -1
+
+        return num_out
 
 print("Starting the check...")
-Solution().reverse(12345)
+print(Solution().reverse(-12345))
