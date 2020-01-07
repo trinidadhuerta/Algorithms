@@ -24,16 +24,15 @@ class Solution:
         
         num_in = x
         num_out = 0
-
         isNegative = True if num_in < 0 else False
         
         if isNegative == True:
             num_in *= -1
 
         while num_in != 0:
-            pop = num_in%10
+            pop = num_in % 10
             num_in = int(num_in / 10)
-            num_out = int((num_out*10) + pop)
+            num_out = int((num_out * 10) + pop)
 
         if isNegative == True:
             num_out *= -1
