@@ -1,4 +1,4 @@
 # Algorithms
-A Compilation of algorithms written in python and C#
+A growing compilation of algorithms written in Python and C#
 
-All files will contain a brute force solution included in the problem description as well as an optimized solution.
+All files will contain at minimum an optimized solution, in the problem description, a secondary or brute force solution may also be coded.
