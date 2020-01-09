@@ -47,3 +47,22 @@ input: MCMXCIV
 output: 1994
 
 """
+
+class Solution:
+    def romanToInt(self, s: str) -> int:
+        #First create a map for easy key value pair lookups
+        map = {
+            'M': 1000,
+            'D': 500,
+            'C': 100,
+            'L': 50,
+            'X': 10,
+            'V': 5,
+            'I': 1
+        }
+
+        #work backwards on the string 
+
+
+
+        return 0
