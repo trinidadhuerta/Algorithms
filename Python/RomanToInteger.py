@@ -62,7 +62,9 @@ class Solution:
         }
 
         #work backwards on the string 
-
-
+        for char in s:
 
         return 0
+
+
+Solution().romanToInt("XIVM")
