@@ -39,5 +39,5 @@ class Solution:
 
         return num_out
 
-print("Starting the check...")
+print("Starting the reversal...")
 print(Solution().reverse(-12345))
