@@ -61,10 +61,19 @@ class Solution:
             'I': 1
         }
 
+        prev_char = "" #holds the previous character read
+        total = 0 #total
+
         #work backwards on the string 
-        for char in s:
+        for char in reversed(s):
+            if char in map:
+                if prev_char in map and map[prev_char] > map[char]: #if the previous character value is greater than the one currently being checked
+                    total -= map[char]
+                else:
+                    total += map[char]
 
-        return 0
+            prev_char = char
+        return total
 
 
-Solution().romanToInt("XIVM")
+print(Solution().romanToInt("MCMXCIV"))
