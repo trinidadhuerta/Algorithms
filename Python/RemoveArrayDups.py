@@ -45,15 +45,28 @@ from typing import List
 
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+
+        length = 1
+
         if len(nums) == 0:
             return 0
 
-        
-        return len(nums)
+        for index in range(1,len(nums)):
+            if nums[index] != nums[index-1]:
+                nums[length] = nums[index]
+                length +=1
+
+        return length
 
                 
 #TESTING SOLUTION
 test_array = [0,0,1,1,1,2,2,3,3,4] #answer should return 5, array should be [0,1,2,3,4]
+
+
+
 print(f"The original array is: {test_array}")
-print(f"Length of modified array: {Solution().removeDuplicates(test_array)}")
-print(f"The New array is: {test_array}")
+
+new_length = Solution().removeDuplicates(test_array)
+print(f"Length of modified array: {new_length}")
+print(f"The New array is: {test_array[:new_length]}")
+
