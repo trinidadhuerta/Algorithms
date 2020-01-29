@@ -34,3 +34,6 @@ Input: points = [[3,2],[-2,2]]
 Output: 5
 
 """
+class Solution:
+    def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
+     
