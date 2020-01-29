@@ -39,3 +39,5 @@ S[i] is "(" or ")"
 S is a valid parentheses string
 """
 
+class Solution:
+    def removeOuterParentheses(self, S: str) -> str:
