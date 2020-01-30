@@ -31,9 +31,8 @@ this is a pythonic way of solving the problem.
 
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
-        counter = Counter(arr)
-        numOccur = Counter(occur for key, occur in counter.items())
-        return all(times == 1 for freq, times in numOccur.items())
+        c = collections.Counter(arr)
+        return len(c) == len(set(c.values())) 
 
 """
 #although the algorithmbelow is slower, it is more descriptive of how the algorithm works. 
@@ -52,10 +51,7 @@ class Solution:
                 _map[num] += 1
 
         #if the length of the values array is the same as the set of the values, then there are no duplicates
-        if len(_map) == len(set(_map.values())):
-            return True
-        else:
-            return False
+        return len(_map) == len(set(_map.values())):
 
 
 
