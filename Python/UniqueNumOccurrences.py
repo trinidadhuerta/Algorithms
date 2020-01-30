@@ -51,7 +51,7 @@ class Solution:
                 _map[num] += 1
 
         #if the length of the values array is the same as the set of the values, then there are no duplicates
-        return len(_map) == len(set(_map.values())):
+        return len(_map) == len(set(_map.values()))
 
 
 
