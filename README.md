@@ -1,2 +1,2 @@
-# Algorithms
-A growing compilation of algorithms written in Python
+# Leet
+A growing compilation of LeetCode Algorithm solutions
